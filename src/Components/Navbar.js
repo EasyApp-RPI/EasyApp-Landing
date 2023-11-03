@@ -32,7 +32,7 @@ function Navigationbar(){
           </Nav>
         </Navbar.Collapse>
       <Button variant='primary me-3' href="#login">Log In</Button>{' '}
-      <Button variant='success' href="#login">Sign Up</Button>
+      <Button variant='secondary' href="#login">Register</Button>
       </Container>
     </Navbar>
     );
