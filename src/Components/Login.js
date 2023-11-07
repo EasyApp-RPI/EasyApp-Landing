@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 function Login(){
     return (
-        <Container className='bg-white rounded col-md-6 py-5'>
+         <Container>
             <div className='shadow p-3 bg-white rounded raised-div'>
             <h2>Login</h2>
             <Form>
