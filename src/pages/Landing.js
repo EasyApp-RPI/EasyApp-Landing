@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import Login from '../Components/Login'
+import Login  from '../Components/Login'
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-bootstrap/Fade';
 import '../index.css'
@@ -37,8 +37,7 @@ function LandingPage(){
           </Container>
         </div>
       </div>
-      <Login>
-      </Login>
+      <Login/>
     </div>
     );
   }
