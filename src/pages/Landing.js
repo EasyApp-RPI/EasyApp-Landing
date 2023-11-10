@@ -68,7 +68,7 @@ function LandingPage(){
               And More!
             </h4>
             <p>
-              We are constantly working, and plan to add 
+              We are constantly working, and plan to add:
               <ul>
                 <li>
                   Job Tracking

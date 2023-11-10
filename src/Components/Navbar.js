@@ -6,12 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "../Logo/easyAppDark.png"
 import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Navigationbar(){
     return(
-      <Navbar expand="lg" className="border-bottom border-3" variant="light" bg="light">
+      <Navbar expand="lg" className="border-bottom border-3">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
         <img
               src={logo}
               width="80"
@@ -20,19 +22,10 @@ function Navigationbar(){
               alt="EasyApp logo"
             />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link to="https://github.com/EasyApp-RPI/EasyApp">Download</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Autofill Application</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Generate Resumes</NavDropdown.Item>
-            </NavDropdown>
-
-          </Nav>
-        </Navbar.Collapse>
-      <Button variant='me-3' href="#login">Log In</Button>{' '}
-      <Button variant='primary me-3' href="#login">Register</Button>
+      <a href="https://github.com/EasyApp-RPI/EasyApp" className="btn btn-primary">
+        Get Started
+        <FontAwesomeIcon icon={faGithub} beat className='px-2' />
+      </a>
       </Container>
     </Navbar>
     );
