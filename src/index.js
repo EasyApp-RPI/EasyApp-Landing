@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Component imports
 import Router from './Components/Router'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <React.StrictMode>
       <Navbar/>
       <Router/>
+      <Footer/>
     </React.StrictMode>
   </HashRouter>
 );
