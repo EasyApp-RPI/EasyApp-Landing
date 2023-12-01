@@ -1,8 +1,9 @@
 import { Container } from 'react-bootstrap';
-import Login  from '../Components/Login'
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-bootstrap/Fade';
-import '../index.css'
+import gif from '../Logo/EasyAppGif.gif'
+import qr from '../Logo/EasyAPPQR.png'
+
 
 function LandingPage(){
     const [index, setIndex] = useState(0);
@@ -22,7 +23,7 @@ function LandingPage(){
     }, []);
   
     return(
-      <div>
+      <div className='.bg-light'>
         <div className= "justify-content-center row mt-5 h-50" bg='light'>
           <div className='w-50 col d-flex justify-content-center align-items-center text-center'>
             <Container className='px-5'>
@@ -35,8 +36,14 @@ function LandingPage(){
               <h4>Download EasyApp, an AI powered application  ready to help <strong>YOU</strong> get hired.</h4>
             </Container>
           </div>
+          <div className='col d-flex justify-content-center align-items-center text-center'>
+              <div>
+                <h3>Check out our GitHub</h3>
+                <img src={qr} alt="loading..." className= 'w-50 '/>
+              </div>
+          </div>
           <div className='col'>
-              <Login/>
+              <img src={gif} alt="loading..." className='h-80 w-75' />
           </div>
         </div>
         <div className='row py-5 text-center'>
