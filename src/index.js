@@ -11,6 +11,7 @@ import Router from './Components/Router'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer';
 
+// Hash router implementation to be able to load multiple pages
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
